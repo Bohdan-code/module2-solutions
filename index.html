@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module2</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+}
+
+p {
+    font-size: 125%;
+}
+
+.text {
+  width: 90%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+.col-lg-3 {
+    float: left;
+    margin: 0 5px;
+    border: 1px solid black;
+    background-color: gray;
+    position: relative;
+    width: 32%;
+}
+
+.name1, .name2, .name3 {
+    position: absolute;
+    margin: 0;
+    width: 40%;
+    text-align: center;
+    right: 0%;
+    padding: 8px 0;
+    font-family: Helvetica;
+    font-weight: bold;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    background-color: pink;
+}
+
+.name2 {
+    background-color: rgb(199, 46, 46);
+    color: white;
+}
+
+.name3 {
+    background-color: rgb(211, 224, 91);
+}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+.col-md-6, .col-md-12 {
+    float: left;
+    margin: 5px 5px;
+    border: 1px solid black;
+    background-color: gray;
+    position: relative;
+}
+.col-md-6 {
+    width: 48%;
+}
+.col-md-12 {
+    width: 97%;
+}
+
+.name1, .name2, .name3 {
+    position: absolute;
+    margin: 0;
+    width: 45%;
+    text-align: center;
+    right: 0%;
+    padding: 8px 0;
+    font-family: Helvetica;
+    font-weight: bold;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    background-color: pink;
+}
+
+.name2 {
+    background-color: rgb(199, 46, 46);
+    color: white;
+}
+
+.name3 {
+    width: 22%;
+    background-color: rgb(211, 224, 91);
+}
+}
+
+/********** Smal devices only **********/
+@media (max-width: 767px) {
+.col-sm-12 {
+    float: left;
+    margin: 5px 5px;
+    border: 1px solid black;
+    background-color: gray;
+    position: relative;
+}
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .name1, .name2, .name3 {
+    position: absolute;
+    margin: 0;
+    width: 35%;
+    text-align: center;
+    right: 0%;
+    padding: 8px 0;
+    font-family: Helvetica;
+    font-weight: bold;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    background-color: pink;
+}
+
+.name2 {
+    background-color: rgb(199, 46, 46);
+    color: white;
+}
+
+.name3 {
+    background-color: rgb(211, 224, 91);
+}
+}
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-12"><p class="name1">Chicken</p><p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+  <div class="col-lg-3 col-md-6 col-sm-12"><p class="name2">Beef</p><p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+  <div class="col-lg-3 col-md-12 col-sm-12"><p class="name3">Sushi</p><p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+</div>
+
+</body>
+</html>
